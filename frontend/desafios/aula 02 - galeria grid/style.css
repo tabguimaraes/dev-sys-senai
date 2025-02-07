@@ -1,0 +1,90 @@
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+}
+
+footer {
+  height: 5%;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+#grid-container {
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "a b b c"
+    "a d e c"
+    "a f g g"
+    "a h g g";
+  gap: 5px;
+  padding: 5px 0;
+}
+
+.foto {
+  width: 100%;
+  background-color: red;
+  overflow-y: hidden;
+}
+
+.foto:nth-child(1) {
+  grid-area: a;
+  background-color: blue;
+  place-self: center;
+}
+.foto:nth-child(2) {
+  grid-area: b;
+}
+.foto:nth-child(3) {
+  grid-area: c;
+}
+.foto:nth-child(4) {
+  grid-area: d;
+}
+.foto:nth-child(5) {
+  grid-area: e;
+}
+.foto:nth-child(6) {
+  grid-area: f;
+}
+.foto:nth-child(7) {
+  grid-area: g;
+}
+.foto:nth-child(8) {
+  grid-area: h;
+}
