@@ -43,6 +43,11 @@ footer p {
   padding: 15px;
 }
 
+.container {
+  max-width: 90vw;
+  margin: auto;
+}
+
 #grid-container {
   height: 85vh;
   display: grid;
